@@ -1,0 +1,152 @@
+:root{
+    --main-color:#0096c7;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+main{
+    margin-top: 4rem;
+}
+
+.card{
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: 1px 1px 9px -5px rgb(138, 138, 138);
+   
+}
+
+.card img{
+    height: 250px;
+    padding : 6px;
+    
+}
+
+.btn-outline-primary{
+    color:var(--main-color);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--main-color);
+}
+.fa-rupee-sign{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+.card-flex {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.card-flex p{
+    margin: 8px;
+    
+}
+
+
+ /* Scroll bar for rating */
+
+ .scroll-rating {
+     max-height: 80vh;
+     overflow-y: scroll;
+     overflow-x: hidden;
+ }
+
+.scroll-rating::-webkit-scrollbar {
+    width: 4px;
+    
+  }
+   
+ .scroll-rating::-webkit-scrollbar-track {
+    box-shadow: 0;
+    
+  }
+   
+ .scroll-rating::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 6px;
+    /* outline: 1px solid slategrey; */
+  }
+
+  .scroll-cart {
+    max-height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.scroll-cart::-webkit-scrollbar {
+   width: 6px;
+   
+ }
+  
+.scroll-cart::-webkit-scrollbar-track {
+   box-shadow: 0;
+   
+ }
+  
+.scroll-cart::-webkit-scrollbar-thumb {
+   background-color: rgba(219, 219, 219,.4);
+   border-radius: 6px;
+   /* outline: 1px solid slategrey; */
+ }
+
+.scroll-cart-pay {
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.scroll-cart-pay::-webkit-scrollbar {
+   width: 6px;
+   
+ }
+  
+.scroll-cart-pay::-webkit-scrollbar-track {
+   box-shadow: 0;
+   
+ }
+  
+.scroll-cart-pay::-webkit-scrollbar-thumb {
+   background-color: rgba(219, 219, 219,.4);
+   border-radius: 6px;
+   /* outline: 1px solid slategrey; */
+ }
+
+
+
+
+ /* card height of cart */
+
+
+
+
+
+
+ .container{
+     padding:5px; 
+ }
+
+
+ .d-f{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding:15px 5px;
+ }
+
+.d-f div{
+    margin-bottom: 6px;
+
+}
+
+
+
+.font-fam{
+    font-family: 'Sofia', cursive;
+   }

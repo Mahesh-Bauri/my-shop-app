@@ -1,0 +1,35 @@
+<%- include("../partials/header") %>
+<%- include("../partials/navbar") %>
+
+<main>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+            <%- include('../partials/flash')%>
+
+                <h1 class="display-3 mb-3">Login</h1>
+                
+                <form action="/login" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label" for="username">Username</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Login</button>
+                </form>
+                <div class="mt-3">
+                    <a href="/register" class="link-primary text-decoration-none">New User? SignUp</a>
+                   </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</main>
+
+
+<%- include("../partials/footer") %>

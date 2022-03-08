@@ -1,0 +1,53 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #0077b6;">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="/home"><span><i class="fa-solid fa-store"></i></span><span class="font-fam"> Shopping Cart</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="/products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="/product/new">New</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto me-5 mb-2 mb-lg-0">
+          <%if(!currUser){%>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="/register">SignUp</a>
+          </li>
+          <%}else{%>
+          <li class="nav-item ">
+            <a class="nav-link active " href="#"><span class="fw-light">Hello</span> <strong><%=currUser.username%></strong></a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link position-relative cart-icon" href="/cart/user">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="position-absolute top-4 start-100 translate-middle badge rounded-pill bg-danger">
+                <%=currUser.cart.length%>
+                <span class="visually-hidden"></span>
+              </span>
+             
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+         
+        <%}%>
+        </ul>
+      </div>
+    </div>
+  </nav>
